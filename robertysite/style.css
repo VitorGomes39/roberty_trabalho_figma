@@ -1,0 +1,110 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Seção Superior com Imagem */
+.hero {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
+                      url('https://images.unsplash.com/photo-1594498653385-d5172b532c00?q=80&w=2000&auto=format&fit=crop'); /* Imagem de colheita */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 40px;
+    padding-left: 5%;
+}
+
+.banner-text h1 {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+}
+
+/* Área de Conteúdo */
+.container {
+    text-align: center;
+    margin-top: -30px; /* Faz o ícone subir um pouco */
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.grain-icon {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Caixa Verde Central */
+.main-title-box {
+    background-color: #052601; /* Verde escuro idêntico */
+    color: white;
+    padding: 30px 40px;
+    border-radius: 40px;
+    margin-bottom: 60px;
+}
+
+.main-title-box h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+/* Botões Inferiores */
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 60px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #333;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 600px) {
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-text h1 {
+        font-size: 1.5rem;
+    }
+    .main-title-box h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Ajuste extra para parágrafos dentro da caixa verde */
+.main-title-box p {
+    color: #e0e0e0;
+    font-weight: 400;
+}
