@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #e5e5e5;
+}
+
+/* TOPO */
+.topo {
+  width: 100%;
+  height: 60px;
+  background: #2f3e46;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.btn-voltar {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+/* PRODUTOS */
+.produtos {
+  padding: 60px 40px;
+}
+
+.produto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.inverter {
+  flex-direction: row-reverse;
+}
+
+.img-produto {
+  width: 450px; /* ALTERE AQUI */
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+.info {
+  width: 45%;
+}
+
+.caixa-texto {
+  margin-top: 15px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  background: white;
+}
+
+/* RODAPÉ */
+.rodape {
+  background: #2f3e46;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
